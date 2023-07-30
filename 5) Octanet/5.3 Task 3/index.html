@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+    </style>
+  </head>
+  <body class="whole">
+    <nav class="top_bar">
+      <div class="top_container">
+        <ul class="navbar_menu">
+          <li>
+            <a href="/" id="red_logo">
+              <i
+                class="fa-brands fa-reddit fa-xl"
+                style="color: #ff0000"
+                id="main_logo"
+              ></i
+              >reddit
+            </a>
+          </li>
+          <li class="navbar_items">
+            <select title="Select_subreddit" name="Home" id="Home_drop">
+              <option class="Home_items" selected>Home</option>
+              <option class="Home_items">r/memes</option>
+              <option class="Home_items">r/India_speaks</option>
+              <option class="Home_items">r/teenagers</option>
+              <option class="Home_items">r/ExplainLikeI'mFive</option>
+              <option class="Home_items"></option>
+            </select>
+          </li>
+          <li class="navbar_items">
+            <input
+              type="text"
+              name="Search"
+              id="Search_bar"
+              placeholder="Search Reddit"
+            />
+
+          </li>
+          <li class="navbar_items">
+            <a href="/" class="icons" title="popular"
+              ><i class="fa-solid fa-fire" style="color: black"></i>
+            </a>
+          </li>
+          <li class="navbar_items">
+            <a href="/" class="icons" title="Place Your Pixel"
+              ><i class="fa-solid fa-square-parking" style="color: #000000"></i>
+            </a>
+          </li>
+          <li class="navbar_items"> 
+            <a href="/" class="icons" title="Chat"
+              ><i class="fa-regular fa-comment" style="color: black"></i
+            ></a>
+          </li>
+          <li class="navbar_items">
+            <a href="/" class="icons" title="Notifications"
+              ><i class="fa-regular fa-bell" style="color: black"></i
+            ></a>
+          </li>
+          <li class="navbar_items">
+            <a href="/" class="icons" title="Create Post"
+              ><i class="fa-solid fa-plus" style="color: black"></i
+            ></a>
+          </li>
+          <li class="navbar_items">
+            <a href="/" class="navbar_buttons" style="width: auto;" id="Ads"
+              ><i class="fa-solid fa-podcast" style="color: black"></i
+              >Advertise</a
+            >
+          </li>
+          <li class="navbar_items">
+            <div class="selected_option">
+              <h2>Plastic_confusion53</h2>
+              <p>91 karma</p>
+            </div>
+            <ul class="option_dropdown">
+              <li><p>My Stuff</p></li>
+              <li><a href="/"> Online Status </a></li>
+              <li><a href="/"> Profile </a></li>
+              <li><a href="/"> Style Avatar </a></li>
+              <li><a href="/"> User Settings </a></li>
+              <li><hr /></li>
+              <li><p>View Options</p></li>
+              <li><a href="/"> Dark Mode </a></li>
+              <li><hr /></li>
+              <li><a href="/">Create a Community</a></li>
+              <li><a href="/">Advertise on Reddit</a></li>
+              <li><a href="/">Coins</a></li>
+              <li><a href="/">Premium</a></li>
+              <li><a href="/">Explore</a></li>
+              <li><a href="/">Help Center</a></li>
+              <li><a href="/">More</a></li>
+              <li><a href="/">Terms & Policies</a></li>
+              <li><a href="/">User Agreements</a></li>
+              <li><a href="/">Privace Policy</a></li>
+              <li><a href="/">Content Policy</a></li>
+              <li><a href="/">Moderator code of conduct</a></li>
+              <li><hr /></li>
+              <li><a href="/"> Log Out</a></li>
+              <li><p>Reddit, Inc. © 2023. All rights reserved.</p></li>
+            </ul>
+          </li>
+          <li></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="main_container">
+        <div class="center">
+          <div class="create" class="center_element">
+            <img src="/images/profile.jpg" alt="profile_photo" />
+            <input
+              type="text"
+              name="create_post"
+              id="Create_post"
+              placeholder="Create Post"
+            />
+            <button class="post_button" title="Create_post">
+              <i class="fa-regular fa-image fa-xl" style="color: #000000"></i>
+            </button>
+            <button class="post_button" title="Create_community">
+              <i class="fa-solid fa-link fa-xl" style="color: #000000"></i>
+            </button>
+          </div>
+
+          <div class="post_search_container" class="center_element">
+            <div class="best_button_fix">
+              <div class="best_buttons" style="background-color: #f7f2f2; color: #2873cf;">
+                <a href="/" class="best" style="color: #2873cf";">
+                  <i
+                    class="fa-solid fa-rocket fa-xs"
+                    style="color: #2873cf"
+                  ></i>
+                  Best</a
+                >
+              </div>
+              <div class="best_buttons">
+                <a href="/" class="best">
+                  <i class="fa-solid fa-fire fa-xs" style="color: #000000"></i>
+                  Hot</a
+                >
+              </div>
+              <div class="best_buttons">
+                <a href="/" class="best">
+                  <i class="fa-solid fa-star fa-xs" style="color: #000000"></i>
+                  New</a
+                >
+              </div>
+              <div class="best_buttons">
+                <a href="/" class="best">
+                  <i
+                    class="fa-solid fa-arrow-alt-circle-up fa-xs"
+                    style="color: #000000"
+                  ></i>
+                  Top</a
+                >
+              </div>
+              <div class="best_buttons">
+                <a href="/" class="best">
+                  <i
+                    class="fa-solid fa-ellipsis fa-xs"
+                    style="color: #000000"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="best_button_fix">
+              <div class="best_buttons">
+                <a href="/" class="best">
+                  <i
+                    class="fa-solid fa-border-all fa-lg"
+                    style="color: #000000"
+                  ></i
+                  ><i
+                    class="fa-solid fa-arrow-down fa-2xs"
+                    style="color: #000000"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="post_container">
+            <div class="left_bar_post">
+              <a href="/"><i class="fa-solid fa-arrow-up" id="likebtn"></i></a>
+              <input type="number" class="total_up" value="0" name="">
+              <a href="/"><i class="fa-solid fa-arrow-down" id="dislikebtn"></i></a>
+            </div>
+            <div class="main_content_post">
+              <div class="top_bar_main">
+                <div class="username_post">
+                  <img src="images/subreddit.png" alt="subreddit_logo" />
+                  <a href="/"><h3>r/Subreddit</h3></a>
+                  <p>Posted by u/Username x days ago</p>
+                </div>
+              </div>
+              <div class="title_post">
+                <h2>Title.</h2>
+              </div>
+              <div class="post_image">
+                <img src="images/post1.png" alt="[post1]" />
+              </div>
+              <div class="bottom_bar_post">
+                <a href="/" class="post_comment">
+                  <i class="fa-regular fa-message" style="color: #000000"></i>
+                  123 Comments
+                </a>
+                <a href="/" class="post_comment">
+                  <i class="fa-solid fa-gift" style="color: #000000"></i>
+                  Award
+                </a>
+                <a href="/" class="post_comment">
+                  <i class="fa-regular fa-bookmark" style="color: #000000"></i>
+                  Save
+                </a>
+                <a href="/" class="post_comment">
+                  <i class="fa-solid fa-share" style="color: #000000"></i>
+                  Share
+                </a>
+                <a href="/" class="post_comment">
+                  <i class="fa-solid fa-ellipsis" style="color: #000000"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="post_container">
+            <div class="left_bar_post">
+              <i class="fa-solid fa-arrow-up" ></i>
+              <input type="number" class="total_up" value="0" name="">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+            <div class="main_content_post">
+              <div class="top_bar_main">
+                <div class="username_post">
+                  <img src="images/subreddit.png" alt="subreddit_logo" />
+                  <h3>r/Subreddit</h3>
+                  <p>Posted by u/Username x days ago</p>
+                </div>
+              </div>
+              <div class="title_post">
+                <h2>Title.</h2>
+              </div>
+              <div class="post_image">
+                <img src="images/post1.png" alt="[post1]" />
+              </div>
+              <div class="bottom_bar_post">
+                <a href="/" class="post_comment">
+                  <i class="fa-regular fa-message" style="color: #000000"></i>
+                  123 Comments
+                </a>
+                <a href="/" class="post_comment">
+                  <i class="fa-solid fa-gift" style="color: #000000"></i>
+                  Award
+                </a>
+                <a href="/" class="post_comment">
+                  <i class="fa-regular fa-bookmark" style="color: #000000"></i>
+                  Save
+                </a>
+                <a href="/" class="post_comment">
+                  <i class="fa-solid fa-share" style="color: #000000"></i>
+                  Share
+                </a>
+                <a href="/" class="post_comment">
+                  <i class="fa-solid fa-ellipsis" style="color: #000000"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="side">
+          <div class="premium">
+            <span>
+              <h2>
+                <i class="fa-solid fa-shield-virus" style="color: #ff0000"></i
+                >Reddit Premium
+              </h2>
+              <p>The best Reddit Experience</p>
+            </span>
+            <span>
+              <button class="try_premium">
+                <p>Try Now</p>
+              </button>
+            </span>
+          </div>
+          <div class="home_box">
+            <!-- <img src="images/planet.jpeg" alt="planets" class="banner" /> -->
+            <div id="home_avatar">
+              <img src="https://www.redditstatic.com/desktop2x/img/id-cards/snoo-home@2x.png" alt="avatar" class="avatar" />
+              <h2>Home</h2>
+            </div>
+            <p>
+              Your personal Reddit frontpage. Come here to check in with your
+              favorite communities.
+            </p>
+            <hr />
+            <div class="create_home">
+              <div class="home_buttons">
+                <button style="background-color: lightblue">
+                  <p>Create Post</p>
+                </button>
+                <button>
+                  <p>Create Community</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="agreements">
+            <div class="agree_container">
+              <ul>
+                <li><a href="/">User Agreement</a></li>
+                <li><a href="/">Content Policy</a></li>
+                <li><a href="/">Privacy Policy</a></li>
+                <li><a href="/">Moderator Code of Conduct</a></li>
+              </ul>
+              <hr />
+              <ul>
+                <li><a href="/">English</a></li>
+                <li><a href="/">Deutsch</a></li>
+                <li><a href="/">Francais </a></li>
+                <li><a href="/">Espanol</a></li>
+                <li><a href="/">Italiano</a></li>
+                <li><a href="/">Portuguese</a></li>
+              </ul>
+              <hr />
+              <p>Reddit, Inc. © 2023. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
